@@ -1,0 +1,34 @@
+{
+    "name": "BT2_TEST",
+    "path_ignore": [
+        "ProgramData\\Nvidia Corporation",
+        "AppData\\Local\\nvidia",
+        "ProgramData\\Intel",
+        "AppData\\Local\\d3dscache"
+    ],
+    "exefs": {
+        "ext": ["exe", "dll", "dylib", "so"],
+        "files": ["somefile.exe", "somefile.dll"],
+        "paths": ["/vpath/to/something"]
+    },
+    "map": [{
+        "src": "bt2.zip",
+        "target": "/app",
+        "case_sensitive": false,
+        "read_only": true
+    },
+        {
+            "src": "/Users/batteryshark/test_raw",
+            "target": "/raw",
+            "case_sensitive": false,
+            "read_only": true
+        }
+    ],
+    "entrypoints": {
+        "default": {
+            "exe_path": "",
+            "vcwd_path": "",
+            "args": []
+        }
+    }
+}
